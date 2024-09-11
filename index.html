@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Portfolio</title>
+</head>
+<body>
+    <nav class="navbar"> 
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Gallery</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Contact Me</a></li>
+        </ul>
+        
+    </nav>
+    <div class="container">
+        <div class="h2">
+            <p class="h1">Welcome To My Photography PortFolio. </p>
+            <span class="c">Capturing the beauty of the world through the lens.</span>      
+            <br>
+    <a href="C:\Users\adiid\OneDrive\Desktop\portfolio\gallery.html"> <button class="Gallery">View Gallery</button></a>
+    <a href="C:\Users\adiid\OneDrive\Desktop\portfolio\contactme.html"><button class="contact">Contact Me</button></a>
+    </div>
+</div>
+</body>
+<script src="C:\Users\adiid\OneDrive\Desktop\portfolio\first.js"></script>
+</html>
+<style>
+    body {
+        background-image: url('imgs/6830.jpeg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+    }
+    .navbar{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        height: 60px;
+    }
+    .navbar ul{
+        list-style-type: none; 
+        background-color: rgba(0,0,0,0);     
+        padding-left: 0px;
+        padding-right: 20px;
+        margin: 0px; 
+        overflow: hidden;
+        align-items: center;
+    }
+    .navbar a{
+        color: white;
+        text-decoration: none;
+        padding:15px;
+        font-size: 25px;
+        display: block;
+        text-align: center;
+        cursor: pointer;
+    }
+    .navbar a:hover{
+        background-color: gray;
+    }
+    .navbar li{
+        text-align: center;
+        float: left;
+    }
+    .h1{
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size: 85PX;
+        width: 600px;
+        color: blanchedalmond;
+        margin-left: 60px;
+        margin-top: 40px;
+        margin-bottom: 30px;
+        position: relative;
+    }
+    .c{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 30px;
+        width: 600px;
+        color:white;
+        margin-left: 60px;
+        display: block;
+    }
+    .Gallery{
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        width: 157px;
+        height: 50px;
+        font-size: 19px;
+        text-decoration: none;
+        border-radius: 10px;
+        background-color: grey;
+        color: white;
+        margin-left: 60px;
+        padding: ;
+    }
+    .contact{
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        width: 157px;
+        height: 50px;
+        font-size: 19px;
+        border-radius: 10px;
+        background-color: grey;
+        color: white;
+        backdrop-filter: blur(20px);
+        margin-left: 60px;
+    }
+    .Gallery:hover{
+        cursor: pointer;
+        background: transparent;
+        backdrop-filter: blur(40px);
+    }
+    .contact:hover{
+        cursor: pointer;
+        color: white;
+        background: transparent;
+        backdrop-filter: blur(40px);
+    }
+    .img{
+        width: 470.55px;
+        height: 600.55px;
+        display: inline;
+        float: right;
+        padding: 20px;
+        border-radius: 30px;
+        margin-right: 90px;
+        margin-top: 40px;
+        position: relative;
+    } 
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .text{
+        margin-top: 0px;
+    }
+    .background{
+        height: 20px;
+    }
+</style>
