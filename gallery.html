@@ -2,30 +2,51 @@
 <html>
 <head>
     <body>
-        <p class="head">WELCOME TO MY GALLERY.</p>
+        <i><h1>Welcome To My Gallery</h1></i>
         <div class="container">
             <div class="gallery">
-                    <img src="imgs\2024-11-02 14.50 (3).jpg" alt="image1" class="gallery_image">
-                    <img src="imgs\2024-11-03 11.23 (1).png" alt="image2" class="gallery_image">
+                    <img src="imgs\2024-08-10 00.38.jpg" alt="image1" class="gallery_image">
+                    <img src="imgs\2024-11-02 14.50 (3).jpg" alt="image2" class="gallery_image">
+                    <img src="imgs\2024-11-08 13.05 (4).jpg" alt="image7" class="gallery_image">
                     <img src="imgs\2024-11-02 20.23.jpg" alt="image3" class="gallery_image">
                     <img src="imgs\2024-12-10 03.31.jpg" alt="image6" class="gallery_image">
                     <img src="imgs\2024-05-12 00.28.jpg" alt="image4" class="gallery_image">
                     <img src="imgs\2024-06-30 17.32.jpg" alt="image5" class="gallery_image">
-                    <img src="imgs\2024-11-08 13.05 (4).jpg" alt="image7" class="gallery_image">
-                    <img src="imgs\2025-02-06 08.25.jpg" alt="image8" class="gallery_image">
-
+                    <img src="imgs\2024-11-03 11.23 (1).png" alt="image7" class="gallery_image">
+                    <img src="imgs\2023-12-25 16.57.jpg" alt="image8" class="gallery_image">
+                    <img src="imgs\2024-09-01 07.48.jpg" alt="image9" class="gallery_image">
+                    <img src="imgs\2024-02-18 13.41.jpg" alt="image10" class="gallery_image">
+                    <img src="imgs\2024-05-30 13.35 (1).jpg" alt="image11" class="gallery_image">
+                    <img src="imgs\2024-11-07 23.03.jpg" alt="image12" class="gallery_image">
+                    <img src="imgs\2024-11-02 20.23 (1).jpg" alt="image123" class="gallery_image">
+                    <img src="imgs\2024-11-08 13.38.jpg" alt="image14" class="gallery_image">
+                    <img src="imgs\2024-09-28 00.53.jpg" alt="image15" class="gallery_image">
+        
             </div>
         </div>
-        
+        <p>Visit <a href="https://www.instagram.com/aaaadi_____/"target="blank">My instagram handle</a> for more</p>
+
     </body>
 </head>
 </html>
 <style>
-    .head{
-        font-family: Georgia, 'Times New Roman', Times, serif;
+    
+    
+    h1{
+        font-family: cursive;
         font-size: 40px;
+        font-weight: lighter;
         text-align: center;
         color: rgb(89,85,235);
+        font-style: italic;
+    }
+    p{
+        text-align: center;
+        font-family: cursive;
+    }
+    a{
+        text-decoration: none;
+        font-style: italic;
     }
     .container{
         display: flex;
@@ -36,18 +57,17 @@
     }
     .gallery{
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(200px, 6fr));
-        grid-template-rows: masonry;
+        grid-template-columns: repeat(auto-fit,250px);
+        justify-content: center;
+        padding: 5px;
+        width: 1200px;
         gap: 16px;
-        padding: 20px;
-        max-width: 1200px;
-        grid-auto-rows: fit-content();
-        grid-auto-flow: dense;
-        margin: 0 auto;
+        margin: 10px;
+        overflow: hidden;
+        column-count: 3;
         
     }
     .gallery_image{
-        height: auto;
         width: 100%;
         background-color: white;
         border-radius: 12px;
@@ -58,7 +78,12 @@
         width: 100%;
         display: block;
         border-radius: 12px;
+        break-inside: avoid;
 
+    }
+    img{
+        width: 100%;
+        object-fit: cover;
     }
     .section{
         flex: 1;
