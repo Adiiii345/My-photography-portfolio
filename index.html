@@ -2,149 +2,176 @@
 <html>
 <head>
     <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <body>
+<div id="header">
     <nav class="navbar"> 
         <ul>
             <li><a href="">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="index.html">Services</a></li>
+            <li><a href="index.html">My work</a></li>
             <li><a href="contactme.html">Contact Me</a></li>
-        </ul>
-        
+        </ul>   
     </nav>
     <div class="container">
         <div class="h2">
-            <h1>Welcome to my photography portfolio.</h1>
-            <p>Capturing the beauty of the world through the lens.</p>      
+            <h1>Welcome to my portfolio website.</h1>
+            <p class="intro">Capturing the beauty of the world through the lens.</p>      
             <br>
-    <a href="gallery.html"> <button class="Gallery">View Gallery</button></a>
-    <a href="contactme.html"><button class="contact">Contact Me</button></a>
+        <a href="gallery.html"> <button class="Gallery">View Gallery</button></a>
+        <a href="contactme.html"><button class="contact">Contact Me</button></a>
+        </div>
     </div>
 </div>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="imgs\2025-02-24 18.21.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p> A highly Motivated student Pursuing Bachelor of Technology in Computer Science and Engineering. I find myself highly interested in the rapidly evolving field of programming and computer Science domain. Apart from studies, I am a passionate Photographer with an eye for every detail and love for story telling through my lens.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link"onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links"onclick="opentab('projects')">Projects</p>
+                    <p class="tab-links"onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span> C++</span><br>Data Structures and Algorithms</li>
+                        <li><span> Web Development</span><br>Developing responsive Web pages using HTML, CSS and Javascript</li>
+                        <li><span> Data Analytics</span><br>Data Analytics and Data Visualization using python and excel</li>
+                        <li><span> Editing</span><br>Have experience working with Adobe Premiere Pro</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="projects">
+                    <ul>
+                        <li><span>Zomato Data Analysis</span><br>Data Analysis and Visualization Using Python.</li>
+                        <li><span> Personal Portfolio Website</span><br>A portfolio website using HTML, CSS and Javascript.</li>
+                        <li><span> Sign recognition System</span><br> An AI model converting audio signals to image using Python.</li>
+                        <li><span> Web Scraping using Python</span><br> A basic implementation of web scraping of an Amazon webpage using BeautifulSoap.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span> 2022- Present</span><br>Bachelor of Technology at VIT Bhopal University. Current CGPA : 7.96</li>
+                        <li><span> 2022</span><br>Senior Secondary Education at Sagar Public School, Saket Nagar, Bhopal.</li>
+                        <li><span> 2020</span><br>Secondary Education at Sagar Public School, Saket Nagar, Bhopal.<br> Percentage : 92.8</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+<!--Gallery-->
+<div id="third-page">
+    <h1>Welcome To My Gallery</h1>
+    <p> Whilst trying to actively run along the rapidly evolving computer domain, I find my solitude in the art of defining stories through my lens. Here is a look at my gallery containing some of my captures from portraits to landscapes.</p>
+        <div class="container">
+            <div class="gallery">
+                    <img src="imgs\2024-08-10 00.38.jpg" alt="image1" class="gallery_image">
+                    <img src="imgs\2024-11-02 14.50 (3).jpg" alt="image2" class="gallery_image">
+                    <img src="imgs\2024-11-08 13.05 (4).jpg" alt="image7" class="gallery_image">
+                    <img src="imgs\2024-11-02 20.23.jpg" alt="image3" class="gallery_image">
+                    <img src="imgs\2024-12-10 03.31.jpg" alt="image6" class="gallery_image">
+                    <img src="imgs\2024-05-12 00.28.jpg" alt="image4" class="gallery_image">
+                    <img src="imgs\2024-06-30 17.32.jpg" alt="image5" class="gallery_image">
+                    <img src="imgs\2024-11-03 11.23 (1).png" alt="image7" class="gallery_image">
+                    <img src="imgs\2023-12-25 16.57.jpg" alt="image8" class="gallery_image">
+                    <img src="imgs\2024-09-01 07.48.jpg" alt="image9" class="gallery_image">
+                    <img src="imgs\2024-02-18 13.41.jpg" alt="image10" class="gallery_image">
+                    <img src="imgs\2024-05-30 13.35 (1).jpg" alt="image11" class="gallery_image">
+                    <img src="imgs\2024-11-07 23.03.jpg" alt="image12" class="gallery_image">
+                    <img src="imgs\2024-11-02 20.23 (1).jpg" alt="image123" class="gallery_image">
+                    <img src="imgs\2024-11-08 13.38.jpg" alt="image14" class="gallery_image">
+                    <img src="imgs\2024-09-28 00.53.jpg" alt="image15" class="gallery_image">
+        
+            </div>
+        </div>
+        
+
+</div>
+<!--Portfolio-->
+<div id="portfolio">
+     <h1 class="sub-title">My work</h1>
+     <div class="worklist">
+        <div class="work">
+            <img src="imgs\work 1.png">
+            <div class="layer">
+                <h3> A web Scraping Tool</h3>
+                <p> The project helped me understand better about web scraping with python using beautiful Soup and Pandas.</p><br>
+                <a href="https://github.com/Adiiii345/web-scraper-Amazon-"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+        </div>
+        <div class="work">
+            <img src="imgs\work 2.jpg">
+            <div class="layer">
+                <h3> Audio Recognition System</h3>
+                <p> It made me familiar with various Python libraries including pandas, opencv, tkinter and speech recognition.</p><br>
+                <a href="https://github.com/Adiiii345/web-scraper-Amazon-"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+        </div>
+        <div class="work">
+            <img src="imgs\work 3.jpg">
+            <div class="layer">
+                <h3> My calculator App.</h3>
+                <p> It is a simple calculator implementing basic concepts of HTML, CSS and Java Script.</p><br>
+                <a href="https://github.com/Adiiii345/web-scraper-Amazon-"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+        </div>
+     </div>
+     <a href="https://github.com/Adiiii345" download class="btn">See More</a>
+</div>
+<!--Contact me-->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-envelope"></i> adiidashputra@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i> +91-7489045107</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-square-github"></i></a>
+                </div>
+                <a href="imgs\my resume (1).pdf" class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="email" name="Email" placeholder="Enter your email" required>
+                    <input type="text" name="name" placeholder="Enter your name" required>
+                    <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                    
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>adiidashputra@gmail.com. Thank you <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+<script>
+    let tablinks= document.getElementsByClassName('tab-links')
+    let tabcontents=document.getElementsByClassName('tab-contents')
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
 </body>
 </head>
 </html>
-<style>
-    body{
-        background-image: url('imgs/6830.jpeg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        margin: 0;
-        height: 100vh; /* Full viewport height */
-        width: 100%; 
-    }
-    .navbar{
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
-        height: 60px;
-    }
-    .navbar ul{
-        list-style-type: none; 
-        background-color: rgba(0,0,0,0);     
-        padding-left: 0px;
-        padding-right: 20px;
-        margin: 0px; 
-        overflow: hidden;
-        align-items: center;
-    }
-    .navbar a{
-        color: white;
-        text-decoration: none;
-        padding:15px;
-        font-size: 25px;
-        display: block;
-        text-align: center;
-        cursor: pointer;
-    }
-    .navbar a:hover{
-        background-color: gray;
-    }
-    .navbar li{
-        text-align: center;
-        float: left;
-    }
-    .container{
-        display: flex;
-    }
-    h1{
-        font-family:Georgia, 'Times New Roman', Times, serif;
-        font-size: 85PX;
-        max-width: 600px;
-        color: blanchedalmond;
-        margin-left: 60px;
-        margin-top: 40px;
-        margin-bottom: 30px;
-        position: relative;
-        display: flex;
-    
-    }
-    p{
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 30px;
-        max-width: 600px;
-        color:white;
-        margin-left: 60px;
-        display: flex;
-    }
-    .Gallery{
-        font-family:Georgia, 'Times New Roman', Times, serif;
-        width: 157px;
-        height: 50px;
-        font-size: 19px;
-        text-decoration: none;
-        border-radius: 10px;
-        background-color: grey;
-        color: white;
-        margin-left: 60px;
-        padding: 0;
-    }
-    .contact{
-        font-family:Georgia, 'Times New Roman', Times, serif;
-        width: 157px;
-        height: 50px;
-        font-size: 19px;
-        border-radius: 10px;
-        background-color: grey;
-        color: white;
-        backdrop-filter: blur(20px);
-        margin-left: 60px;
-    }
-    .Gallery:hover{
-        cursor: pointer;
-        background: transparent;
-        backdrop-filter: blur(40px);
-    }
-    .contact:hover{
-        cursor: pointer;
-        color: white;
-        background: transparent;
-        backdrop-filter: blur(40px);
-    }
-    .img{
-        width: 470.55px;
-        height: 600.55px;
-        display: inline;
-        float: right;
-        padding: 20px;
-        border-radius: 30px;
-        margin-right: 90px;
-        margin-top: 40px;
-        position: relative;
-    } 
-    .container{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .text{
-        margin-top: 0px;
-    }
-    .background{
-        height: 20px;
-    }
-    
-</style>
